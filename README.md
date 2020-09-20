@@ -1,6 +1,6 @@
-##Reflections
+## Reflections
 
-####Computer mouse
+#### Computer mouse
 
 Identify the types of testing you would perform on a computer mouse, to make sure that it is of the highest quality.
 
@@ -42,7 +42,7 @@ Identify the types of testing you would perform on a computer mouse, to make sur
 •	Bruger test, om musen er komfortable at havde i hånden
 
 
-####Catastrophic failure
+#### Catastrophic failure
 
 Find a story where a software system defect had a bad outcome. Describe what happened. Can you identify a test that would have prevented it?
 
@@ -54,9 +54,9 @@ Der skulle fremgå test for den normal frigivelse dato, hvorpå der tilføjelse 
 Der skulle teste af formindskning  af frigivelse datoen påvirkede den korrekte person i system og ikke manipulerede med andet data i system.
 
 
-##Investigation of tools
+## Investigation of tools
 
-####JUnit 5
+#### JUnit 5
 
 Investigate JUnit 5 (Jupiter). Explain the following, and how they are useful.
 
@@ -101,7 +101,7 @@ Kan bruges hvis man skal teste flere functionalitet i en service. F.eks. hvis fi
 Disse bliver brugt til at se om test er true eller false, f.eks. hvis assumeFalse er false vil testene blive abortet fordi der ikke er brug for mere testing efter dette. Hvormed assumeTrue fortæller hvis testen er true vil testene køre videre ellers vil den arbote testene.
 
 
-##Mocking frameworks
+## Mocking frameworks
 
 Investigate mocking frameworks for your preferred language. Choose at least two frameworks, and answer the questions. (One could be Mockito, which we saw in class.)
 
