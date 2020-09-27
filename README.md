@@ -98,6 +98,7 @@ Kan bruges hvis man skal teste flere functionalitet i en service. F.eks. hvis fi
 
 
 •	assumeFalse, assumeTrue
+
 Disse bliver brugt til at se om test er true eller false, f.eks. hvis assumeFalse er false vil testene blive abortet fordi der ikke er brug for mere testing efter dette. Hvormed assumeTrue fortæller hvis testen er true vil testene køre videre ellers vil den arbote testene.
 
 
@@ -105,11 +106,16 @@ Disse bliver brugt til at se om test er true eller false, f.eks. hvis assumeFals
 
 Investigate mocking frameworks for your preferred language. Choose at least two frameworks, and answer the questions. (One could be Mockito, which we saw in class.)
 
+Valgte: Mockito, EasyMock 
+
 •	What are their similarities?
+    
  
 
 •	What are their differences?
 
 
+
 •	Which one would you prefer, if any, and why?
+
 
