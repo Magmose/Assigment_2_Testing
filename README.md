@@ -109,8 +109,13 @@ Investigate mocking frameworks for your preferred language. Choose at least two 
 Valgte: Mockito, EasyMock 
 
 •	What are their similarities?
-    
- 
+
+>* allow the same level verification as EasyMock (unexpected invocations, redundant invocations, verification in order)
+
+> * argument matchers (anyInt(), anyObject(), etc.)
+
+ har taget det snippet fra https://code.google.com/archive/p/mockito/wikis/MockitoVSEasyMock.wiki, pga. jeg syns det var svært at finde noget korrekt der tilknytter som de ikke beskriver. Mockito skriver selv at de har været meget inspiret af hvordan easyMock var opbygget og har taget inspiration for dem, og lighederne ligger i disse to punkter.
+
 
 •	What are their differences?
 
