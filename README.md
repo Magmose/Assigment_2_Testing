@@ -119,8 +119,27 @@ Valgte: Mockito, EasyMock
 
 •	What are their differences?
 
+>* no record/replay modes - no need for them. There only 2 things you can do with Mockito mocks - verify or stub. Stubbing goes before execution and verification afterwards.
 
+>* all mocks are 'nice' (even somehow nicer, because collection-returning methods return empty collections instead of nulls). Even though mocks are nice, you can verify them as strictly as you want and detect any unwanted interaction.
+
+>* explicit language for better readability: verify() and when() VS the mixture of expect(mock.foo()) and mock.foo() (plain method call without 'expect'). I'm sure some of you will find this argument subjective :)
+
+>* simplified stubbing model - stubbed methods replay all the time with stubbed value no matter how many times they are called. Works exactly like EasyMock's andStubReturn(), andStubThrow(). Also, you can stub with different return values for different arguments (like in EasyMock).
+
+>* Verification of stubbed methods is optional because usually it's more important to test if the stubbed value is used correctly rather than where's it come from.
+
+>* verification is explicit - verification errors point at line of code showing what interaction failed.
+
+>* verification in order is flexible and doesn't require to verify every single interaction.
+
+>* custom argument matchers use hamcrest matchers, so you can use your existing hamcrest matchers. (EasyMock can also integrate with hamcrest though it is not a part of EasyMock but hamcrest. See the documentation of hamcrest).
+
+Har taget snippet fra https://code.google.com/archive/p/mockito/wikis/MockitoVSEasyMock.wiki.
+Som skrevet er det ikke stor forskel på mocking libarys, dog har Mockito two ekstra ting til sig Veify Stub, som tages i brug. De små forskelle ligger også i hvordan mocked udføres. Der er forskellige navngivninger, ihvorpå man kan tage valget om hvilket mocking værktøj man vil tage i brug.
 
 •	Which one would you prefer, if any, and why?
+
+Jeg ville forsætte med at bruge Mockito fordi den har ekstra funktionalitent med Stub og Verify, for at få den ekstra funktionalitet med hvis der er brug for det. Ud over er måden man anvender deres metoder også mere simple i forhold til EasyMocks. 
 
 
